@@ -181,8 +181,8 @@ Pour utiliser Inter :
 ### Mise en page
 
 - **Format** : A4
-- **Marges** : 2cm (haut, bas, gauche, droite)
-- **Maximum** : 2 pages
+- **Marges** : 1.8cm (haut, bas, gauche, droite)
+- **Maximum** : 3 pages
 
 ## 🔧 Commandes LaTeX disponibles
 

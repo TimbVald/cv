@@ -8,14 +8,13 @@
         \textbf{#1} & \hfill \textcolor{lightgray}{#3} \\
         \textcolor{emerald}{\textbf{#4}} & \\
     \end{tabularx}
-    \vspace{4pt}
+    \vspace{2pt}
     \textit{#5}
-    \vspace{4pt}
+    \vspace{2pt}
     \begin{itemize}
         #6
     \end{itemize}
-    \vspace{4pt}
-    \vspace{12pt}
+    \vspace{6pt}
 }
 
 % === COMMANDE PROJET ===
@@ -33,22 +32,22 @@
             \href{#4}{Démo}
         \fi
     \end{tabularx}
-    \vspace{4pt}
+    \vspace{2pt}
     \textbf{Stack technique :} \tech{#5}
-    \vspace{4pt}
+    \vspace{2pt}
     \textit{#6}
-    \vspace{4pt}
+    \vspace{2pt}
     \begin{itemize}
         #7
     \end{itemize}
-    \vspace{12pt}
+    \vspace{8pt}
 }
 
 % === COMMANDE COMPÉTENCE ===
 % Usage: \skill{catégorie}{liste des compétences}
 \newcommand{\skill}[2]{
     \textbf{#1 :} \tech{#2}
-    \vspace{4pt}
+    \vspace{3pt}
 }
 
 % === COMMANDE FORMATION ===
@@ -60,7 +59,7 @@
     \else
         \textit{#4}
     \fi
-    \vspace{8pt}
+    \vspace{6pt}
 }
 
 % === COMMANDE CERTIFICATION ===
@@ -68,14 +67,14 @@
 \newcommand{\certification}[3]{
     \textbf{#1} \\
     \textcolor{emerald}{#2} \hfill \textcolor{lightgray}{#3}
-    \vspace{4pt}
+    \vspace{3pt}
 }
 
 % === COMMANDE LANGUE ===
 % Usage: \language{langue}{niveau}
 \newcommand{\language}[2]{
     \textbf{#1} : \tech{#2}
-    \vspace{4pt}
+    \vspace{3pt}
 }
 
 % === COMMANDE CONTACT ===
