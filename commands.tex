@@ -1,0 +1,101 @@
+% Commandes personnalisées réutilisables pour le CV
+
+% === COMMANDE EXPÉRIENCE ===
+% Usage: \experience{entreprise}{poste}{lieu}{dates}{description}{réalisations}{technologies}
+\newcommand{\experience}[7]{
+    \subsection{#2}
+        \begin{tabularx}{\linewidth}{@{}X X@{}}
+        \textbf{#1} & \hfill \textcolor{lightgray}{#3} \\
+        \textcolor{emerald}{\textbf{#4}} & \\
+    \end{tabularx}
+    \vspace{4pt}
+    \textit{#5}
+    \vspace{4pt}
+    \begin{itemize}
+        #6
+    \end{itemize}
+    \vspace{4pt}
+    \vspace{12pt}
+}
+
+% === COMMANDE PROJET ===
+% Usage: \project{nom}{dates}{github}{demo}{technologies}{description}{réalisations}
+\newcommand{\project}[7]{
+    \subsection{#1}
+    \begin{tabularx}{\linewidth}{@{}X@{}}
+        \ifXeTeX
+            \textcolor{emerald}{\faCalendar\ #2} & \hfill 
+            \href{#3}{\faGithub\ GitHub} \quad
+            \href{#4}{\faGlobe\ Démo}
+        \else
+            \textcolor{emerald}{\ding{182}\ #2} & \hfill 
+            \href{#3}{GitHub} \quad
+            \href{#4}{Démo}
+        \fi
+    \end{tabularx}
+    \vspace{4pt}
+    \textbf{Stack technique :} \tech{#5}
+    \vspace{4pt}
+    \textit{#6}
+    \vspace{4pt}
+    \begin{itemize}
+        #7
+    \end{itemize}
+    \vspace{12pt}
+}
+
+% === COMMANDE COMPÉTENCE ===
+% Usage: \skill{catégorie}{liste des compétences}
+\newcommand{\skill}[2]{
+    \textbf{#1 :} \tech{#2}
+    \vspace{4pt}
+}
+
+% === COMMANDE FORMATION ===
+% Usage: \education{diplôme}{établissement}{dates}{mention}
+\newcommand{\education}[4]{
+    \textbf{#1} \\
+    \textcolor{emerald}{#2} \hfill \textcolor{lightgray}{#3} \\
+    \ifx&#4&
+    \else
+        \textit{#4}
+    \fi
+    \vspace{8pt}
+}
+
+% === COMMANDE CERTIFICATION ===
+% Usage: \certification{nom}{organisme}{date}
+\newcommand{\certification}[3]{
+    \textbf{#1} \\
+    \textcolor{emerald}{#2} \hfill \textcolor{lightgray}{#3}
+    \vspace{4pt}
+}
+
+% === COMMANDE LANGUE ===
+% Usage: \language{langue}{niveau}
+\newcommand{\language}[2]{
+    \textbf{#1} : \tech{#2}
+    \vspace{4pt}
+}
+
+% === COMMANDE CONTACT ===
+% Usage: \contact{icône}{texte}{lien}
+\newcommand{\contact}[3]{
+    \ifx&#3&
+        \fa#1\ #2
+    \else
+        \href{#3}{\fa#1\ #2}
+    \fi
+}
+
+% === COMMANDE LISTE RÉALISATIONS ===
+% Usage: \achievement{réalisation}
+\newcommand{\achievement}[1]{
+    \item #1
+}
+
+% === COMMANDE INTÉRÊT ===
+% Usage: \interest{intérêt}
+\newcommand{\interest}[1]{
+    \item #1
+}

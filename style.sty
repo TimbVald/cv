@@ -1,0 +1,112 @@
+% Style Premium ATS - CV Développeur Fullstack
+% Compatible XeLaTeX et PDFLaTeX
+
+% === PACKAGES ATS-COMPATIBLES ===
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+% Chargement conditionnel de fontspec pour XeLaTeX
+\usepackage{iftex}
+\ifXeTeX
+  \usepackage{fontspec}
+  \usepackage{fontawesome5}
+\else
+  \usepackage{helvet}
+  \usepackage{pifont}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% === POLICE MODERNE ===
+% Utilisation de Source Sans Pro pour XeLaTeX
+% Helvetica pour PDFLaTeX (compatibilité)
+\ifXeTeX
+  \setsansfont[
+      BoldFont={Source Sans Pro Bold},
+      ItalicFont={Source Sans Pro Italic},
+      BoldItalicFont={Source Sans Pro Bold Italic}
+  ]{Source Sans Pro}
+\else
+  \usepackage{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% === PALETTE DE COULEURS ===
+% Bleu marine profond
+\definecolor{navyblue}{RGB}{10, 25, 47}
+% Vert émeraude
+\definecolor{emerald}{RGB}{16, 185, 129}
+% Gris clair
+\definecolor{lightgray}{RGB}{148, 163, 184}
+% Gris moyen
+\definecolor{mediumgray}{RGB}{71, 85, 105}
+% Blanc
+\definecolor{white}{RGB}{255, 255, 255}
+
+% === CONFIGURATION HYPERREF ===
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navyblue,
+    urlcolor=emerald,
+    pdfauthor={Loic Cabrel KEPSEU},
+    pdftitle={CV - Loic Cabrel KEPSEU - Développeur Fullstack},
+    pdfsubject={CV Développeur Fullstack Angular/Node.js}
+}
+
+% === MISE EN PAGE ===
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% === STYLE DES SECTIONS ===
+\titleformat{\section}{
+    \vspace{8pt}
+    \bfseries
+    \Large
+    \color{navyblue}
+    \uppercase
+}{}{0pt}{}[\titlerule]
+
+\titleformat{\subsection}{
+    \vspace{4pt}
+    \bfseries
+    \large
+    \color{mediumgray}
+}{}{0pt}{}
+
+\titlespacing{\section}{0pt}{12pt}{8pt}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% === LISTES ===
+\setlist[itemize]{
+    leftmargin=1.5em,
+    topsep=4pt,
+    itemsep=2pt,
+    label=\textcolor{emerald}{\textbullet}
+}
+
+% === TABLEAUX ===
+\renewcommand{\arraystretch}{1.2}
+
+% === PERSONNALISATION DU TEXTE ===
+\newcommand{\highlight}[1]{\textcolor{emerald}{\textbf{#1}}}
+\newcommand{\tech}[1]{\textcolor{mediumgray}{\textit{#1}}}
+
+% === MISE EN PAGE DU HEADER ===
+\newcommand{\headersection}[1]{
+    \parbox[b]{\linewidth}{
+        \vspace{4pt}
+        #1
+    }
+}
