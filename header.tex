@@ -2,65 +2,46 @@
 
 %================== HEADER ==================
 
-\noindent
-\begin{minipage}[c]{0.72\textwidth}
-
-    {\Huge\bfseries\textcolor{navyblue}{Loïc Cabrel KEPSEU}}\\[8pt]
-
-    {\Large\textcolor{mediumgray}{Full Stack Developer}}\\[5pt]
-
-    {\large\textcolor{lightgray}{React • Next.js • Node.js • TypeScript}}
-
-\end{minipage}
-\hfill
-\begin{minipage}[c]{0.23\textwidth}
-    \centering
-
-    \begin{tikzpicture}
-        % Rayon de la photo
-        \def\radius{1.55}
-
-        % Découpe en cercle
-        \clip (0,0) circle (\radius cm);
-
-        % Photo
-        \node at (0,0)
-        {\includegraphics[
-            width=3.1cm,
-            height=3.1cm
-        ]{images/photo.png}};
-
-        % Bordure
-        \draw[
-            navyblue,
-            line width=1.3pt
-        ] (0,0) circle (\radius cm);
-
-    \end{tikzpicture}
-
-\end{minipage}
-
-\vspace{0.5cm}
-
 \begin{center}
-    \begin{tabularx}{0.9\linewidth}{@{}X@{}X@{}X@{}}
-        \ifXeTeX
-            \contact{MapMarker}{Yaoundé, Cameroon}{} & 
-            \contact{Phone}{+237 640 359 858}{} & 
-            \contact{Envelope}{cabrelkepseu@email.com}{} \\
-            \contact{Github}{github.com/TimbVald}{https://github.com/TimbVald} & 
-            \contact{Linkedin}{linkedin.com/in/loïc-cabrel-kepseu-30b6b0377}{https://linkedin.com/in/loïc-cabrel-kepseu-30b6b0377} & 
-            \contact{Globe}{klc-porfolio.vercel.app}{https://klc-porfolio.vercel.app}
-        \else
-            \href{https://maps.google.com}{\ding{182}} Yaoundé, Cameroon & 
-            \href{tel:+237600000000}{\ding{37}} +237 640 359 858 & 
-            \href{mailto:loic.kepseu@email.com}{\ding{142}} cabrellkepseu@gmail.com \\
-            % Remplacement du texte générique par l'URL d'affichage
-            \href{https://github.com/loickepseu}{github.com/TimbVald} & 
-            \href{https://linkedin.com/in/loickepseu}{linkedin.com/in/loïc-cabrel-kepseu-30b6b0377} & 
-            \href{https://portfolio.loickepseu.com}{klc-porfolio.vercel.app}
-        \fi
-    \end{tabularx}
+    {\Huge\bfseries\textcolor{navyblue}{Loïc Cabrel KEPSEU}}\\[12pt]
+
+    {\Large\textcolor{mediumgray}{Full Stack Developer}}\\[8pt]
+
+    {\large\textcolor{lightgray}{React • Next.js • Node.js • TypeScript}}\\[16pt]
 \end{center}
 
-\vspace{8pt}
+% Ligne de séparation
+\begin{center}
+    \textcolor{navyblue}{\rule{0.9\linewidth}{0.8pt}}
+\end{center}
+\vspace{10pt}
+
+% Informations de contact sur une ligne
+\begin{center}
+    \small
+    \ifXeTeX
+        \contact{MapMarker}{Yaoundé, Cameroon}{} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \contact{Phone}{+237 640 359 858}{} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \contact{Envelope}{cabrelkepseu@email.com}{} \\[8pt]
+        \contact{Github}{github.com/TimbVald}{https://github.com/TimbVald} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \contact{Linkedin}{linkedin.com/in/loïc-cabrel-kepseu-30b6b0377}{https://linkedin.com/in/loïc-cabrel-kepseu-30b6b0377} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \contact{Globe}{klc-porfolio.vercel.app}{https://klc-porfolio.vercel.app}
+    \else
+        \href{https://maps.google.com}{\ding{182}} Yaoundé, Cameroon \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \href{tel:+237640359858}{\ding{37}} +237 640 359 858 \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \href{mailto:cabrelkepseu@email.com}{\ding{142}} cabrelkepseu@email.com \\[8pt]
+        \href{https://github.com/TimbVald}{github.com/TimbVald} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \href{https://linkedin.com/in/loïc-cabrel-kepseu-30b6b0377}{linkedin.com/in/loïc-cabrel-kepseu-30b6b0377} \hspace{0.5cm}
+        \textcolor{lightgray}{$\bullet$} \hspace{0.5cm}
+        \href{https://klc-porfolio.vercel.app}{klc-porfolio.vercel.app}
+    \fi
+\end{center}
+
+\vspace{12pt}
