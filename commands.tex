@@ -18,27 +18,25 @@
 }
 
 % === COMMANDE PROJET ===
-% Usage: \project{nom}{dates}{github}{demo}{technologies}{description}{réalisations}
-\newcommand{\project}[7]{
+% Usage: \project{nom}{dates}{site}{technologies}{description}{réalisations}
+\newcommand{\project}[6]{
     \subsection{#1}
     \begin{tabularx}{\linewidth}{@{}X@{}}
         \ifXeTeX
-            \textcolor{emerald}{\faCalendar\ #2} & \hfill 
-            \href{#3}{\faGithub\ GitHub} \quad
-            \href{#4}{\faGlobe\ Démo}
+            \textcolor{emerald}{\faCalendar\ #2} & \hfill
+            \href{#3}{\faGlobe\ Site}
         \else
-            \textcolor{emerald}{\ding{182}\ #2} & \hfill 
-            \href{#3}{GitHub} \quad
-            \href{#4}{Démo}
+            \textcolor{emerald}{\ding{182}\ #2} & \hfill
+            \href{#3}{Site}
         \fi
     \end{tabularx}
     \vspace{2pt}
-    \textbf{Stack technique :} \tech{#5}
+    \textbf{Stack technique :} \tech{#4}
     \vspace{2pt}
-    \textit{#6}
+    \textit{#5}
     \vspace{2pt}
     \begin{itemize}
-        #7
+        #6
     \end{itemize}
     \vspace{8pt}
 }

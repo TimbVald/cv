@@ -114,13 +114,13 @@ Exemple :
 Dans `projects.tex`, utiliser la commande :
 
 ```latex
-\project{Nom du projet}{Dates}{GitHub}{Démo}{Technologies}{Description}{Réalisations}
+\project{Nom du projet}{Dates}{Site/Démo}{Technologies}{Description}{Réalisations}
 ```
 
 Exemple :
 
 ```latex
-\project{Mon Projet}{2023}{https://github.com/user/project}{https://demo.com}{React, Node.js}{Description du projet.}{
+\project{Mon Projet}{2023}{https://demo.com}{React, Node.js}{Description du projet.}{
     \achievement{Réalisation 1}
     \achievement{Réalisation 2}
 }
@@ -189,8 +189,8 @@ Pour utiliser Inter :
 ### `\experience{entreprise}{poste}{lieu}{dates}{description}{réalisations}`
 Ajoute une expérience professionnelle
 
-### `\project{nom}{dates}{github}{demo}{technologies}{description}{réalisations}`
-Ajoute un projet avec liens
+### `\project{nom}{dates}{site}{technologies}{description}{réalisations}`
+Ajoute un projet avec lien vers le site/démo
 
 ### `\skill{catégorie}{compétences}`
 Ajoute une catégorie de compétences
