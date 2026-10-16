@@ -97,7 +97,7 @@ Ouvrir `header.tex` et modifier :
 Dans `experience.tex`, utiliser la commande :
 
 ```latex
-\experience{Entreprise}{Poste}{Lieu}{Dates}{Description}{Réalisations}{Technologies}
+\experience{Entreprise}{Poste}{Lieu}{Dates}{Description}{Réalisations}
 ```
 
 Exemple :
@@ -106,7 +106,7 @@ Exemple :
 \experience{Tech Corp}{Développeur Fullstack}{Paris}{2020 - 2022}{Développement d'applications web.}{
     \achievement{Réalisation 1}
     \achievement{Réalisation 2}
-}{Angular, Node.js, TypeScript}
+}
 ```
 
 ### Ajouter un projet
@@ -186,7 +186,7 @@ Pour utiliser Inter :
 
 ## 🔧 Commandes LaTeX disponibles
 
-### `\experience{entreprise}{poste}{lieu}{dates}{description}{réalisations}{technologies}`
+### `\experience{entreprise}{poste}{lieu}{dates}{description}{réalisations}`
 Ajoute une expérience professionnelle
 
 ### `\project{nom}{dates}{github}{demo}{technologies}{description}{réalisations}`
